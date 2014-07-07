@@ -10,3 +10,33 @@
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
 </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <!-- mobile meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Woozy">
+  <!-- main style -->
+  <link rel="stylesheet" type="text/css" href="{{"css/normalize.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{"css/base.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{"css/style.css" | prepend: site.baseurl }}">
+  <!-- font-awesome stlye -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css" rel="stylesheet">
+  <!-- google web fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
+      }
+    });
+  </script>
+  <!-- jQuery scripts -->
+  <script type="text/javascript" src="{{ "js/modernizr.js" | prepend: site.baseurl}}"></script>
+  <!-- favion -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
+  <!-- apple touch icon -->
+  <link rel="apple-touch-icon" href="images/ico.png">
+</head>
+
