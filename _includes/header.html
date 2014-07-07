@@ -1,28 +1,29 @@
-<header class="site-header">
-
-  <div class="wrap">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
-          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
-            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
-            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
-            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
+<!-- preloader -->
+  <div class="loading">
+    <img class="loading-gif" src="images/preloader2.gif" alt="preloader2.gif">
   </div>
+  <!-- navigation -->
+  <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="social-div">
+      <a class="w-inline-block social fa fa-twitter" href="#" data-ix="fade-down-9"></a>
+      <a class="w-inline-block social fa fa-pinterest" href="#" data-ix="fade-down-10"></a>
+      <a class="w-inline-block social fa fa-facebook" href="#" data-ix="fade-down-11"></a>
+    </div>
+    <div class="w-container container-nav">
+      <a class="w-nav-brand brand" href="#home" data-ix="fade-down"><!-- here is the logo -->
+        <img class="logo" src="images/logo.png" width="179" alt="logo.png" data-ix="fade-down">
+      </a>
+      <!-- nav tag -->
+      <nav class="w-nav-menu nav" role="navigation"><a class="w-nav-link nav-link" href="#home" data-ix="fade-down-2">Home</a><a class="w-nav-link nav-link" href="#about" data-ix="fade-down-3">About</a><a class="w-nav-link nav-link" href="#team" data-ix="fade-down-4">T$
+        href="#service" data-ix="fade-down-5">Services</a><a class="w-nav-link nav-link" href="#project" data-ix="fade-down-6">Project</a><a class="w-nav-link nav-link" href="#features" data-ix="fade-down-7">Features</a><a class="w-nav-link nav-link"
+        href="#contact" data-ix="fade-down-8">Contact</a>
+      </nav>
+      <div class="w-nav-button menu-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div><!-- end navigation -->
 
-</header>
+
+
+
